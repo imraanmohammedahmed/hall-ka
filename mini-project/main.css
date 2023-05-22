@@ -1,0 +1,319 @@
+.top-nav ul li{
+    display: inline;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 0.5rem;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #f2f2f2;
+  }
+  
+  nav ul li.active a {
+    color: #007bff;
+    font-weight: bold;
+  }
+  .logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 2rem 0;
+  }
+  
+  .logo-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  nav button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #halls {
+      margin-top: 50px;
+    }
+    
+    .hall-card {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .hall-card img {
+      width: 40%;
+      height: auto;
+      object-fit: cover;
+    }
+    
+    .details {
+      padding: 20px;
+      width: 60%;
+    }
+    
+    .details h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .details p {
+      margin-bottom: 15px;
+      font-size: 16px;
+      color: #555;
+    }
+    
+    .rating {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .rating i {
+      color: #f5c518;
+      margin-right: 5px;
+    }
+    
+    .rating span {
+      margin-left: 5px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .price span {
+      color: #f5c518;
+      margin-right: 5px;
+    }
+  
+    nav button {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+  
+    nav ul li {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
+  
+    nav ul li:last-child {
+      margin-bottom: 0;
+    }
+  
+    nav ul li a {
+      padding: 0.25rem;
+      border-radius: 5px;
+    }
+  
+    nav ul li.active a {
+      background-color: #007bff;
+      color: #fff;
+    }
+  }
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Define global styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Define styles for header */
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin-right: 1rem;
+  }
+  
+  header nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  header nav ul li a {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Define styles for hero section */
+  .hero {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .hero form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .hero input[type="text"] {
+    width: 50%;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.2rem;
+  }
+  
+  .hero button[type="submit"] {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  /* Define styles for main content sections */
+  section {
+    padding: 5rem 1rem;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  section p {
+    margin-bottom: 2rem;
+  }
+  
+  section ul {
+    list-style: disc;
+    margin-bottom: 2rem;
+  }
+  
+  section ul li {
+    margin-bottom: 1rem;
+  }
+  
+  /* Define styles for contact form */
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form textarea {
+    height: 10rem;
+  }
+  
+  form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #0069d9;
+  }
